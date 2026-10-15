@@ -1,0 +1,1390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atharva Guldagad | Backend Engineer & Systems Architect</title>
+    <meta name="description" content="Portfolio of Atharva Guldagad, a third-year BE Computer Engineering student specializing in backend engineering, distributed systems, Kafka, Go, Java, and cloud infrastructure." />
+    <meta name="keywords" content="Atharva Guldagad, Backend Engineer, Java, Spring Boot, Golang, Apache Kafka, Distributed Systems, Kubernetes, Cloud Computing" />
+    <meta name="author" content="Atharva Guldagad" />
+    <meta name="theme-color" content="#FFF8EE" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Atharva Guldagad | Backend Engineer" />
+    <meta property="og:description" content="I build the systems behind the magic. Luxury dessert-themed developer portfolio." />
+
+    <!-- Favicon: Luxury Pink & Caramel Cupcake SVG -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧁</text></svg>" />
+
+    <!-- Google Fonts with graceful system font fallbacks -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Master Confectionery Stylesheet -->
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body>
+    <!-- Skip to Main Content Link -->
+    <a href="#main-content" class="skip-to-content-link">Skip to main content</a>
+
+    <!-- Ambient Confectionery Background & Pastry Glows -->
+    <div class="ambient-sprinkles-bg" aria-hidden="true">
+      <div class="pastry-ambient-glow glow-top-right"></div>
+      <div class="pastry-ambient-glow glow-mid-left"></div>
+      <div class="pastry-ambient-glow glow-bottom-right"></div>
+      <div class="ambient-particle particle-1">🧁</div>
+      <div class="ambient-particle particle-2">🍬</div>
+      <div class="ambient-particle particle-3">🍩</div>
+      <div class="ambient-particle particle-4">🍰</div>
+      <div class="ambient-particle particle-5">✦</div>
+      <div class="ambient-particle particle-6">✧</div>
+      <div class="ambient-particle particle-7">✨</div>
+      <div class="ambient-particle particle-8">☕</div>
+    </div>
+
+    <!-- ======================================================================
+         SECTION A: NAVIGATION
+         ====================================================================== -->
+    <header class="navbar-header">
+      <div class="navbar-container">
+        <!-- Brand with Cupcake Icon -->
+        <a href="#hero" class="navbar-brand" aria-label="Atharva Guldagad Homepage" title="atharva.dev — Backend Engineer">
+          <div class="brand-icon-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E26D85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 12H5c-.55 0-1 .45-1 1v6c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-6c0-.55-.45-1-1-1z" />
+              <path d="M4.5 12c-.83 0-1.5-.67-1.5-1.5 0-1.8 1.4-3.3 3.2-3.5C6.7 4.9 8.6 3 11 3c2.2 0 4 1.6 4.4 3.7 1.6.4 2.8 1.8 2.8 3.5 0 .9-.7 1.8-1.5 1.8H4.5z" />
+              <line x1="8" y1="12" x2="8" y2="21" stroke-dasharray="2 2" opacity="0.6" />
+              <line x1="12" y1="12" x2="12" y2="21" stroke-dasharray="2 2" opacity="0.6" />
+              <line x1="16" y1="12" x2="16" y2="21" stroke-dasharray="2 2" opacity="0.6" />
+              <circle cx="12" cy="3" r="1.5" fill="#E26D85" stroke="none" />
+            </svg>
+          </div>
+          <span class="brand-name">atharva.dev</span>
+          <span class="brand-dot"></span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <ul class="nav-links-list">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#stack" class="nav-link">Stack</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#beyond" class="nav-link">Beyond</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Side Actions & Tools -->
+        <div class="navbar-actions">
+          <!-- Sprinkles Shower Button -->
+          <button class="action-icon-btn sprinkles-trigger-btn" title="Launch Sweet Sprinkles" aria-label="Trigger sweet sprinkles confetti">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D89A62" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z" />
+            </svg>
+          </button>
+
+          <!-- Sound Synthesizer Mute/Unmute Toggle -->
+          <button class="action-icon-btn audio-toggle-btn" title="Audio Chimes: Active" aria-label="Toggle audio chimes">
+            🔊
+          </button>
+
+          <!-- GitHub Link Button -->
+          <a href="https://github.com/placeholder-atharva" target="_blank" rel="noopener noreferrer" class="action-icon-btn github-btn" title="Visit GitHub Profile (Editable placeholder)" aria-label="GitHub Profile">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#4B2925" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              <path d="M9 18c-4.51 2-5-2-7-2" />
+            </svg>
+          </a>
+
+          <!-- Mobile Hamburger Button -->
+          <button class="mobile-hamburger-btn" aria-label="Toggle mobile menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4B2925" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" x2="20" y1="12" y2="12" />
+              <line x1="4" x2="20" y1="6" y2="6" />
+              <line x1="4" x2="20" y1="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Responsive Mobile Drawer Menu -->
+      <div class="mobile-nav-drawer">
+        <ul class="mobile-links-list">
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#stack" class="mobile-nav-link">Stack</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#beyond" class="mobile-nav-link">Beyond</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+          <li class="mobile-drawer-footer">
+            <a href="https://github.com/placeholder-atharva" target="_blank" rel="noopener noreferrer" class="mobile-github-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+              <span>GitHub Profile</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ======================================================================
+         MAIN SINGLE-PAGE CONTENT
+         ====================================================================== -->
+    <main id="main-content">
+
+      <!-- ====================================================================
+           SECTION B: HERO — THE MAIN ATTRACTION
+           ==================================================================== -->
+      <section id="hero" class="hero-section">
+        <div class="hero-grid-container">
+          <!-- Left Column: Personal Information & Narrative -->
+          <div class="hero-content-col">
+            <!-- Student Status Badge -->
+            <div class="hero-badge">
+              <span class="badge-sparkle">✨</span>
+              <span class="badge-text">THIRD-YEAR COMPUTER ENGINEERING STUDENT</span>
+            </div>
+
+            <!-- Large Headline -->
+            <h1 class="hero-headline">
+              I build the systems <br />
+              <span class="headline-magic">behind the magic<span class="dessert-period">.</span></span>
+            </h1>
+
+            <!-- Supporting Text -->
+            <p class="hero-bio">
+              I'm Atharva — a backend engineer exploring distributed systems, cloud infrastructure, AI/ML, and the occasional piece of gloriously useless software.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore My Work</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow">
+                  <line x1="5" x2="19" y1="12" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </a>
+
+              <a href="#contact" class="btn btn-secondary">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+                <span>Let's Connect</span>
+              </a>
+            </div>
+
+            <!-- Honest Availability Status Indicator -->
+            <div class="hero-status-pill">
+              <span class="status-indicator-dot"></span>
+              <span class="status-text">Open to technical conversations &amp; collaborative ideas</span>
+            </div>
+
+            <!-- Compact Tech Strip -->
+            <div class="hero-tech-strip">
+              <div class="tech-strip-label">
+                <span>CORE INGREDIENTS</span>
+              </div>
+              <div class="tech-strip-icons">
+                <div class="tech-strip-item" title="Java — Robust OOP & Core Services" tabindex="0">
+                  <div class="tech-strip-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+                      <path d="M11 25c6 1.5 13-0.5 14-2.5-1.2 0-3.5 1.2-8.5 1.2-3.8 0-6.2-0.8-5.5 1.3z" fill="#D89A62" />
+                      <path d="M8.5 28c8.5 1.2 16.5-0.5 18-3.2-1.8 0.2-5.5 1.5-11.8 1.5-4.8 0-7.8-1-6.2 1.7z" fill="#4B2925" />
+                      <path d="M14.5 14.5c2-2 4.5-4.5 2-8.5-1 4 0.5 6-2 8.5z" stroke="#E26D85" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <span class="tech-strip-tooltip">Java</span>
+                </div>
+
+                <div class="tech-strip-item" title="Spring Boot — REST APIs & Microservices" tabindex="0">
+                  <div class="tech-strip-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+                      <path d="M16 3L4 10v12l12 7 12-7V10L16 3z" stroke="#6DB33F" stroke-width="2.5" stroke-linejoin="round" fill="#C9E8D2" fill-opacity="0.3" />
+                      <path d="M16 9c-3.8 0-7 3.1-7 7 0 2.8 1.7 5.3 4.2 6.4L16 19.5v-3.8c-1.3 0-2.3-1-2.3-2.3 0-1.3 1-2.3 2.3-2.3 1.3 0 2.3 1 2.3 2.3v7.3c2.6-.9 4.5-3.4 4.5-6.3 0-3.9-3.1-7.4-6.8-7.4z" fill="#6DB33F" />
+                    </svg>
+                  </div>
+                  <span class="tech-strip-tooltip">Spring Boot</span>
+                </div>
+
+                <div class="tech-strip-item" title="Go — High Concurrency & Fast Services" tabindex="0">
+                  <div class="tech-strip-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+                      <rect x="3" y="6" width="26" height="20" rx="5" fill="#00ACD7" fill-opacity="0.15" stroke="#00ACD7" stroke-width="2" />
+                      <text x="16" y="21" font-family="JetBrains Mono, monospace" font-weight="800" font-size="13" fill="#00ACD7" text-anchor="middle">GO</text>
+                    </svg>
+                  </div>
+                  <span class="tech-strip-tooltip">Go (Golang)</span>
+                </div>
+
+                <div class="tech-strip-item" title="Apache Kafka — Event Streaming & Async Pipelines" tabindex="0">
+                  <div class="tech-strip-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+                      <circle cx="8" cy="16" r="4" fill="#4B2925" />
+                      <circle cx="24" cy="8" r="4" fill="#D89A62" />
+                      <circle cx="24" cy="24" r="4" fill="#E26D85" />
+                      <path d="M12 14.5L20 9.5M12 17.5L20 22.5" stroke="#4B2925" stroke-width="2.5" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <span class="tech-strip-tooltip">Apache Kafka</span>
+                </div>
+
+                <div class="tech-strip-item" title="Git — Distributed Version Control" tabindex="0">
+                  <div class="tech-strip-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+                      <rect x="4" y="4" width="24" height="24" rx="4" transform="rotate(45 16 16)" fill="#F05032" fill-opacity="0.2" stroke="#F05032" stroke-width="2" />
+                      <circle cx="12" cy="16" r="2.5" fill="#F05032" />
+                      <circle cx="20" cy="12" r="2.5" fill="#F05032" />
+                      <circle cx="20" cy="20" r="2.5" fill="#F05032" />
+                      <path d="M12 16h4v-4m0 0v8" stroke="#F05032" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <span class="tech-strip-tooltip">Git</span>
+                </div>
+
+                <div class="tech-strip-item" title="Kubernetes — Container Orchestration Study" tabindex="0">
+                  <div class="tech-strip-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+                      <path d="M16 4L27 10.5V21.5L16 28L5 21.5V10.5L16 4Z" stroke="#326CE5" stroke-width="2" fill="#326CE5" fill-opacity="0.15" />
+                      <circle cx="16" cy="16" r="4" fill="#326CE5" />
+                    </svg>
+                  </div>
+                  <span class="tech-strip-tooltip">Kubernetes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: 3D Cupcake Showcase -->
+          <div class="hero-visual-col">
+            <div class="cupcake-3d-scene" style="perspective: 1200px;">
+              <div class="cupcake-3d-rig">
+                <div class="dessert-ambient-glow"></div>
+
+                <!-- Floating Orbitals -->
+                <div class="floating-orbit-item orbit-macaron-mint" style="transform: translateZ(65px);">
+                  <div class="mini-macaron-3d mint-flavor" title="Pistachio Macaron">
+                    <div class="macaron-shell top"></div>
+                    <div class="macaron-filling"></div>
+                    <div class="macaron-shell bottom"></div>
+                  </div>
+                </div>
+
+                <div class="floating-orbit-item orbit-macaron-berry" style="transform: translateZ(90px);">
+                  <div class="mini-macaron-3d berry-flavor" title="Strawberry Macaron">
+                    <div class="macaron-shell top"></div>
+                    <div class="macaron-filling cream"></div>
+                    <div class="macaron-shell bottom"></div>
+                  </div>
+                </div>
+
+                <div class="floating-orbit-item orbit-caramel-ring" style="transform: translateZ(45px);">
+                  <div class="mini-donut-3d" title="Caramel Glazed Donut"></div>
+                </div>
+
+                <div class="floating-orbit-item orbit-code-pill" style="transform: translateZ(110px);">
+                  <div class="pastry-code-pill">
+                    <span class="code-dot pulse-mint"></span>
+                    <code>status: 200 OK</code>
+                  </div>
+                </div>
+
+                <div class="floating-orbit-item orbit-kafka-stream" style="transform: translateZ(80px);">
+                  <div class="pastry-code-pill caramel-tag">
+                    <span>☕</span>
+                    <code>KafkaConsumer()</code>
+                  </div>
+                </div>
+
+                <div class="floating-orbit-item orbit-go-routine" style="transform: translateZ(50px);">
+                  <div class="pastry-code-pill mint-tag">
+                    <code>go func()</code>
+                  </div>
+                </div>
+
+                <div class="floating-orbit-item orbit-star-1" style="transform: translateZ(120px);">✦</div>
+                <div class="floating-orbit-item orbit-star-2" style="transform: translateZ(75px);">✧</div>
+                <div class="floating-orbit-item orbit-star-3" style="transform: translateZ(95px);">★</div>
+
+                <!-- MAIN 3D CUPCAKE COMPOSITION -->
+                <div class="main-cupcake-core" title="Click Atharva's signature cupcake for pastry sprinkles!">
+                  <div class="cupcake-floor-shadow"></div>
+
+                  <div class="cupcake-liner-container" style="transform: translateZ(20px);">
+                    <svg viewBox="0 0 200 130" class="cupcake-liner-svg">
+                      <defs>
+                        <linearGradient id="linerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                          <stop offset="0%" stop-color="#D89A62" />
+                          <stop offset="25%" stop-color="#F6B7C8" />
+                          <stop offset="50%" stop-color="#FFF8EE" />
+                          <stop offset="75%" stop-color="#F6B7C8" />
+                          <stop offset="100%" stop-color="#D89A62" />
+                        </linearGradient>
+                        <linearGradient id="foldShade" x1="0%" y1="0%" x2="0%" y2="100%">
+                          <stop offset="0%" stop-color="rgba(75, 41, 37, 0.15)" />
+                          <stop offset="100%" stop-color="rgba(75, 41, 37, 0.45)" />
+                        </linearGradient>
+                      </defs>
+                      <polygon points="35,10 165,10 148,115 52,115" fill="url(#linerGrad)" stroke="#D89A62" stroke-width="2" />
+                      <line x1="48" y1="10" x2="62" y2="115" stroke="url(#foldShade)" stroke-width="3" />
+                      <line x1="62" y1="10" x2="73" y2="115" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" />
+                      <line x1="77" y1="10" x2="84" y2="115" stroke="url(#foldShade)" stroke-width="3" />
+                      <line x1="91" y1="10" x2="95" y2="115" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" />
+                      <line x1="105" y1="10" x2="105" y2="115" stroke="url(#foldShade)" stroke-width="3" />
+                      <line x1="119" y1="10" x2="115" y2="115" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" />
+                      <line x1="133" y1="10" x2="125" y2="115" stroke="url(#foldShade)" stroke-width="3" />
+                      <line x1="147" y1="10" x2="136" y2="115" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" />
+                      <ellipse cx="100" cy="115" rx="48" ry="8" fill="#4B2925" fill-opacity="0.25" />
+                    </svg>
+                  </div>
+
+                  <div class="cupcake-sponge-tier" style="transform: translateZ(35px);">
+                    <div class="sponge-dome"></div>
+                  </div>
+
+                  <div class="cupcake-frosting-tier" style="transform: translateZ(55px);">
+                    <svg viewBox="0 0 240 180" class="frosting-svg">
+                      <defs>
+                        <linearGradient id="strawberryFrosting" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stop-color="#FFF0F4" />
+                          <stop offset="30%" stop-color="#F6B7C8" />
+                          <stop offset="70%" stop-color="#F29DB5" />
+                          <stop offset="100%" stop-color="#D96E87" />
+                        </linearGradient>
+                        <linearGradient id="chocolateDrizzle" x1="0%" y1="0%" x2="100%" y2="0%">
+                          <stop offset="0%" stop-color="#381D1A" />
+                          <stop offset="50%" stop-color="#5C332D" />
+                          <stop offset="100%" stop-color="#381D1A" />
+                        </linearGradient>
+                        <linearGradient id="creamGloss" x1="0%" y1="0%" x2="0%" y2="100%">
+                          <stop offset="0%" stop-color="rgba(255,255,255,0.85)" />
+                          <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+                        </linearGradient>
+                      </defs>
+                      <path d="M30,130 C20,95 70,85 85,100 C100,75 140,75 155,100 C170,85 220,95 210,130 C200,160 40,160 30,130 Z" fill="url(#strawberryFrosting)" />
+                      <path d="M50,95 C45,65 95,55 110,75 C125,50 175,55 190,95 C185,120 55,120 50,95 Z" fill="url(#strawberryFrosting)" />
+                      <path d="M60,88 C80,70 110,72 118,85" stroke="url(#creamGloss)" stroke-width="6" stroke-linecap="round" fill="none" />
+                      <path d="M135,78 C155,68 175,80 180,92" stroke="url(#creamGloss)" stroke-width="5" stroke-linecap="round" fill="none" />
+                      <path d="M80,65 C85,35 115,20 120,38 C125,20 155,35 160,65 C155,80 85,80 80,65 Z" fill="url(#strawberryFrosting)" />
+                      <path d="M120,18 C115,28 118,36 122,38 C126,36 129,28 120,18 Z" fill="#F6B7C8" />
+                      <!-- Chocolate Drizzle -->
+                      <path d="M90,38 C95,50 102,60 102,75 C102,88 95,95 95,110 C95,125 102,130 102,140" stroke="url(#chocolateDrizzle)" stroke-width="7" stroke-linecap="round" fill="none" />
+                      <path d="M135,42 C145,55 140,75 148,90 C155,102 148,118 152,135" stroke="url(#chocolateDrizzle)" stroke-width="6" stroke-linecap="round" fill="none" />
+                      <!-- Specular shine -->
+                      <circle cx="100" cy="72" r="1.8" fill="#FFF8EE" />
+                      <circle cx="145" cy="85" r="1.5" fill="#FFF8EE" />
+                      <!-- Sprinkles & Dev Easter Eggs -->
+                      <rect x="70" y="112" width="10" height="4" rx="2" fill="#D89A62" transform="rotate(25 75 114)" />
+                      <rect x="150" y="118" width="10" height="4" rx="2" fill="#C9E8D2" transform="rotate(-35 155 120)" />
+                      <rect x="110" y="125" width="11" height="4" rx="2" fill="#4B2925" transform="rotate(15 115 127)" />
+                      <rect x="85" y="80" width="9" height="3.5" rx="1.8" fill="#FFF8EE" transform="rotate(-40 89 82)" />
+                      <text x="65" y="98" font-family="JetBrains Mono, monospace" font-weight="700" font-size="11" fill="#4B2925" transform="rotate(-15 65 98)">1</text>
+                      <text x="168" y="105" font-family="JetBrains Mono, monospace" font-weight="700" font-size="11" fill="#4B2925" transform="rotate(20 168 105)">0</text>
+                      <text x="125" y="90" font-family="JetBrains Mono, monospace" font-weight="800" font-size="13" fill="#D89A62" transform="rotate(10 125 90)">{</text>
+                      <text x="135" y="115" font-family="JetBrains Mono, monospace" font-weight="800" font-size="13" fill="#E26D85" transform="rotate(-20 135 115)">}</text>
+                    </svg>
+
+                    <!-- Sugar Wafer Flag: </> -->
+                    <div class="cupcake-sugar-wafer" style="transform: translateZ(30px) translateY(-18px);">
+                      <div class="wafer-stick"></div>
+                      <div class="wafer-card">
+                        <span class="wafer-code">&lt;/&gt;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cupcake-click-hint" style="transform: translateZ(70px);">
+                  <span>Tap to sprinkle</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <a href="#about" class="hero-scroll-indicator" aria-label="Scroll down to About section">
+          <div class="scroll-pill">
+            <div class="scroll-dot"></div>
+          </div>
+          <span class="scroll-label">Scroll to taste</span>
+        </a>
+      </section>
+
+      <!-- ====================================================================
+           SECTION C: ABOUT ME
+           ==================================================================== -->
+      <section id="about" class="section-container about-section">
+        <div class="section-header">
+          <div class="section-pill">
+            <span>🍪</span>
+            <span>ORIGIN &amp; PHILOSOPHY</span>
+          </div>
+          <h2 class="section-title">A little about the developer<span class="dessert-period">.</span></h2>
+          <p class="section-subtitle">
+            Blending the discipline of distributed computing with the craftsmanship of an artisan patisserie.
+          </p>
+        </div>
+
+        <div class="about-split-grid">
+          <!-- Left Column: Story -->
+          <div class="about-narrative-col">
+            <div class="narrative-card">
+              <div class="narrative-ribbon">
+                <span>Third-Year Engineering</span>
+              </div>
+              <p class="narrative-paragraph intro-lead">
+                I'm a third-year Computer Engineering student who enjoys understanding what happens behind the scenes. I'm interested in building reliable backend systems, exploring distributed architectures, and learning how cloud-native applications work.
+              </p>
+              <p class="narrative-paragraph">
+                When I'm not experimenting with code, you'll probably find me gaming, reading, or building software that solves absolutely no problems — but teaches me something new.
+              </p>
+
+              <div class="bakery-analogy-box">
+                <div class="analogy-icon">
+                  <span>🧁</span>
+                </div>
+                <div class="analogy-content">
+                  <h4 class="analogy-title">The Patisserie Principle</h4>
+                  <p class="analogy-text">
+                    Just like a delicate soufflé requires precise temperature, timing, and structural integrity, resilient backend microservices require clean architecture, strict contracts, and graceful fault tolerance under load.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Quick Specs -->
+              <div class="quick-specs-grid">
+                <div class="spec-card">
+                  <span class="spec-label">Discipline</span>
+                  <span class="spec-value">BE Computer Eng.</span>
+                </div>
+                <div class="spec-card">
+                  <span class="spec-label">Focus</span>
+                  <span class="spec-value">Backend &amp; Systems</span>
+                </div>
+                <div class="spec-card">
+                  <span class="spec-label">Mindset</span>
+                  <span class="spec-value">Curiosity-Driven</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: 3 Specialization Cards -->
+          <div class="about-cards-col">
+            <div class="specializations-list">
+              <!-- Card 1: Backend Engineering -->
+              <div class="specialization-card backend-card" tabindex="0">
+                <div class="card-top-row">
+                  <div class="card-icon-bubble">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D89A62" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+                      <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+                      <line x1="6" x2="6.01" y1="6" y2="6" stroke-width="3" />
+                      <line x1="6" x2="6.01" y1="18" y2="18" stroke-width="3" />
+                    </svg>
+                  </div>
+                  <div class="card-meta">
+                    <span class="card-flavor-tag">Dark Chocolate Fondant</span>
+                    <span class="card-number">01</span>
+                  </div>
+                </div>
+                <h3 class="card-heading">Backend Engineering</h3>
+                <p class="card-summary">APIs, services, and system design.</p>
+                <div class="card-highlight-drawer">
+                  <p class="card-highlight-text">Designing fault-tolerant endpoints, data pipelines, and scalable service boundaries.</p>
+                </div>
+              </div>
+
+              <!-- Card 2: Cloud & DevOps -->
+              <div class="specialization-card cloud-card" tabindex="0">
+                <div class="card-top-row">
+                  <div class="card-icon-bubble">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4F8A65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                    </svg>
+                  </div>
+                  <div class="card-meta">
+                    <span class="card-flavor-tag">Mint Pistachio Ganache</span>
+                    <span class="card-number">02</span>
+                  </div>
+                </div>
+                <h3 class="card-heading">Cloud &amp; DevOps</h3>
+                <p class="card-summary">Infrastructure, automation, and Kubernetes.</p>
+                <div class="card-highlight-drawer">
+                  <p class="card-highlight-text">Exploring container orchestration, deployment workflows, and cloud-native topologies.</p>
+                </div>
+              </div>
+
+              <!-- Card 3: AI/ML Exploration -->
+              <div class="specialization-card aiml-card" tabindex="0">
+                <div class="card-top-row">
+                  <div class="card-icon-bubble">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#E26D85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" />
+                      <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z" />
+                      <path d="M12 5v14" />
+                    </svg>
+                  </div>
+                  <div class="card-meta">
+                    <span class="card-flavor-tag">Strawberry Glaze Shimmer</span>
+                    <span class="card-number">03</span>
+                  </div>
+                </div>
+                <h3 class="card-heading">AI/ML Exploration</h3>
+                <p class="card-summary">Learning and experimenting with intelligent systems.</p>
+                <div class="card-highlight-drawer">
+                  <p class="card-highlight-text">Understanding practical machine learning pipelines, model integration, and inference APIs.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION D: TECH STACK — "MY KITCHEN OF TECHNOLOGIES"
+           ==================================================================== -->
+      <section id="stack" class="section-container stack-section">
+        <div class="section-header">
+          <div class="section-pill">
+            <span>🧁</span>
+            <span>CURATED PANTRY</span>
+          </div>
+          <div class="title-with-confection">
+            <h2 class="section-title">My kitchen of technologies<span class="dessert-period">.</span></h2>
+            <span class="floating-candy-badge" title="Freshly stocked pantry!">🍬</span>
+          </div>
+          <p class="section-subtitle">
+            Curated ingredients chosen for performance, fault tolerance, and clean systems architecture.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="stack-tabs-wrapper">
+          <div class="stack-tabs" role="tablist">
+            <button role="tab" class="stack-tab-btn active-tab" data-category="all">All Ingredients</button>
+            <button role="tab" class="stack-tab-btn" data-category="backend">Backend</button>
+            <button role="tab" class="stack-tab-btn" data-category="messaging">Messaging &amp; Distributed</button>
+            <button role="tab" class="stack-tab-btn" data-category="tools">Tools</button>
+            <button role="tab" class="stack-tab-btn" data-category="exploring">Currently Exploring</button>
+          </div>
+        </div>
+
+        <!-- Tech Cards Grid -->
+        <div class="tech-cards-grid">
+          <!-- Java -->
+          <div class="tech-card" data-category="backend" tabindex="0">
+            <div class="tech-card-header">
+              <div class="tech-icon-container">
+                <svg width="34" height="34" viewBox="0 0 32 32" fill="none">
+                  <path d="M11 25c6 1.5 13-0.5 14-2.5-1.2 0-3.5 1.2-8.5 1.2-3.8 0-6.2-0.8-5.5 1.3z" fill="#D89A62" />
+                  <path d="M8.5 28c8.5 1.2 16.5-0.5 18-3.2-1.8 0.2-5.5 1.5-11.8 1.5-4.8 0-7.8-1-6.2 1.7z" fill="#4B2925" />
+                  <path d="M14.5 14.5c2-2 4.5-4.5 2-8.5-1 4 0.5 6-2 8.5z" stroke="#E26D85" stroke-width="2" stroke-linecap="round" />
+                  <path d="M19 13c1.5-1.5 3-3.5 1.5-6.5-0.8 3 0.4 4.5-1.5 6.5z" stroke="#D89A62" stroke-width="2" stroke-linecap="round" />
+                  <path d="M6 21.5c10 2.5 21 0.5 22.5-3.5-2.2 0.3-6.5 2-15 2-5.5 0-9-1.2-7.5 1.5z" fill="#E26D85" />
+                </svg>
+              </div>
+              <span class="tech-badge badge-backend">Primary Language</span>
+            </div>
+            <div class="tech-card-body">
+              <h3 class="tech-name">Java</h3>
+              <p class="tech-desc">Core language for enterprise-grade backend systems, robust object-oriented patterns, and JVM reliability.</p>
+            </div>
+            <div class="tech-card-footer">
+              <span class="tech-flavor-label">Flavor: Rich Cocoa 70%</span>
+            </div>
+          </div>
+
+          <!-- Spring Boot -->
+          <div class="tech-card" data-category="backend" tabindex="0">
+            <div class="tech-card-header">
+              <div class="tech-icon-container">
+                <svg width="34" height="34" viewBox="0 0 32 32" fill="none">
+                  <path d="M16 3L4 10v12l12 7 12-7V10L16 3z" stroke="#6DB33F" stroke-width="2.5" stroke-linejoin="round" fill="#C9E8D2" fill-opacity="0.3" />
+                  <path d="M16 9c-3.8 0-7 3.1-7 7 0 2.8 1.7 5.3 4.2 6.4L16 19.5v-3.8c-1.3 0-2.3-1-2.3-2.3 0-1.3 1-2.3 2.3-2.3 1.3 0 2.3 1 2.3 2.3v7.3c2.6-.9 4.5-3.4 4.5-6.3 0-3.9-3.1-7.4-6.8-7.4z" fill="#6DB33F" />
+                </svg>
+              </div>
+              <span class="tech-badge badge-backend">Core Framework</span>
+            </div>
+            <div class="tech-card-body">
+              <h3 class="tech-name">Spring Boot</h3>
+              <p class="tech-desc">Framework for building production-ready, RESTful microservices, dependency injection, and data persistence.</p>
+            </div>
+            <div class="tech-card-footer">
+              <span class="tech-flavor-label">Flavor: Spiced Cinnamon Crumb</span>
+            </div>
+          </div>
+
+          <!-- Go (Golang) -->
+          <div class="tech-card" data-category="backend" tabindex="0">
+            <div class="tech-card-header">
+              <div class="tech-icon-container">
+                <svg width="34" height="34" viewBox="0 0 32 32" fill="none">
+                  <rect x="3" y="6" width="26" height="20" rx="5" fill="#00ACD7" fill-opacity="0.15" stroke="#00ACD7" stroke-width="2" />
+                  <text x="16" y="21" font-family="JetBrains Mono, monospace" font-weight="800" font-size="13" fill="#00ACD7" text-anchor="middle">GO</text>
+                </svg>
+              </div>
+              <span class="tech-badge badge-backend">Concurrency Specialist</span>
+            </div>
+            <div class="tech-card-body">
+              <h3 class="tech-name">Go (Golang)</h3>
+              <p class="tech-desc">High-performance compiled language for concurrent network services, lightweight microservices, and fast CLI tools.</p>
+            </div>
+            <div class="tech-card-footer">
+              <span class="tech-flavor-label">Flavor: Crisp Mint Crisp</span>
+            </div>
+          </div>
+
+          <!-- Apache Kafka -->
+          <div class="tech-card" data-category="messaging" tabindex="0">
+            <div class="tech-card-header">
+              <div class="tech-icon-container">
+                <svg width="34" height="34" viewBox="0 0 32 32" fill="none">
+                  <circle cx="8" cy="16" r="4" fill="#4B2925" />
+                  <circle cx="24" cy="8" r="4" fill="#D89A62" />
+                  <circle cx="24" cy="24" r="4" fill="#E26D85" />
+                  <path d="M12 14.5L20 9.5M12 17.5L20 22.5" stroke="#4B2925" stroke-width="2.5" stroke-linecap="round" />
+                </svg>
+              </div>
+              <span class="tech-badge badge-messaging">Event Streaming</span>
+            </div>
+            <div class="tech-card-body">
+              <h3 class="tech-name">Apache Kafka</h3>
+              <p class="tech-desc">Distributed event streaming platform for decoupled architectures, high throughput, and reliable message brokers.</p>
+            </div>
+            <div class="tech-card-footer">
+              <span class="tech-flavor-label">Flavor: Swirled Caramel Ribbon</span>
+            </div>
+          </div>
+
+          <!-- Git -->
+          <div class="tech-card" data-category="tools" tabindex="0">
+            <div class="tech-card-header">
+              <div class="tech-icon-container">
+                <svg width="34" height="34" viewBox="0 0 32 32" fill="none">
+                  <rect x="4" y="4" width="24" height="24" rx="4" transform="rotate(45 16 16)" fill="#F05032" fill-opacity="0.2" stroke="#F05032" stroke-width="2" />
+                  <circle cx="12" cy="16" r="2.5" fill="#F05032" />
+                  <circle cx="20" cy="12" r="2.5" fill="#F05032" />
+                  <circle cx="20" cy="20" r="2.5" fill="#F05032" />
+                  <path d="M12 16h4v-4m0 0v8" stroke="#F05032" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <span class="tech-badge badge-tools">Version Control</span>
+            </div>
+            <div class="tech-card-body">
+              <h3 class="tech-name">Git</h3>
+              <p class="tech-desc">Distributed version control system for atomic commits, disciplined branch workflows, and clean code history.</p>
+            </div>
+            <div class="tech-card-footer">
+              <span class="tech-flavor-label">Flavor: Roasted Hazelnut</span>
+            </div>
+          </div>
+
+          <!-- GitHub -->
+          <div class="tech-card" data-category="tools" tabindex="0">
+            <div class="tech-card-header">
+              <div class="tech-icon-container">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#4B2925" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+              </div>
+              <span class="tech-badge badge-tools">Collaboration Hub</span>
+            </div>
+            <div class="tech-card-body">
+              <h3 class="tech-name">GitHub</h3>
+              <p class="tech-desc">Platform for source code repositories, peer code reviews, CI/CD automated pipelines, and collaborative software.</p>
+            </div>
+            <div class="tech-card-footer">
+              <span class="tech-flavor-label">Flavor: Dark Chocolate Truffle</span>
+            </div>
+          </div>
+
+          <!-- Kubernetes (Exploring) -->
+          <div class="tech-card" data-category="exploring" tabindex="0">
+            <div class="tech-card-header">
+              <div class="tech-icon-container">
+                <svg width="34" height="34" viewBox="0 0 32 32" fill="none">
+                  <path d="M16 4L27 10.5V21.5L16 28L5 21.5V10.5L16 4Z" stroke="#326CE5" stroke-width="2" fill="#326CE5" fill-opacity="0.15" />
+                  <circle cx="16" cy="16" r="4" fill="#326CE5" />
+                  <path d="M16 6v6M16 20v6M7.5 11l5 3M19.5 18l5 3M24.5 11l-5 3M12.5 18l-5 3" stroke="#326CE5" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <span class="tech-badge badge-exploring">Currently Exploring</span>
+            </div>
+            <div class="tech-card-body">
+              <h3 class="tech-name">Kubernetes</h3>
+              <p class="tech-desc">Studying container orchestration, cluster topologies, deployments, pods, and resilient service discovery.</p>
+            </div>
+            <div class="tech-card-footer">
+              <span class="tech-flavor-label">Flavor: Blueberry Frosting</span>
+            </div>
+          </div>
+
+          <!-- Cloud Computing (Exploring) -->
+          <div class="tech-card" data-category="exploring" tabindex="0">
+            <div class="tech-card-header">
+              <div class="tech-icon-container">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#D89A62" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                </svg>
+              </div>
+              <span class="tech-badge badge-exploring">Currently Exploring</span>
+            </div>
+            <div class="tech-card-body">
+              <h3 class="tech-name">Cloud Computing</h3>
+              <p class="tech-desc">Learning cloud-native infrastructure, compute paradigms, managed databases, and scalable cloud storage.</p>
+            </div>
+            <div class="tech-card-footer">
+              <span class="tech-flavor-label">Flavor: Whipped Vanilla Cloud</span>
+            </div>
+          </div>
+
+          <!-- AI & ML (Exploring) -->
+          <div class="tech-card" data-category="exploring" tabindex="0">
+            <div class="tech-card-header">
+              <div class="tech-icon-container">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#E26D85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" />
+                  <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z" />
+                  <path d="M12 5v14" />
+                </svg>
+              </div>
+              <span class="tech-badge badge-exploring">Currently Exploring</span>
+            </div>
+            <div class="tech-card-body">
+              <h3 class="tech-name">AI &amp; ML</h3>
+              <p class="tech-desc">Experimenting with machine learning fundamentals, data preprocessing, model inference, and intelligent endpoints.</p>
+            </div>
+            <div class="tech-card-footer">
+              <span class="tech-flavor-label">Flavor: Strawberry Sugar Dust</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-honesty-note">
+          <span>✨ No arbitrary percentage bars or fake proficiency meters — just honest hands-on skills, active exploration, and steady learning.</span>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION E: FEATURED PROJECTS — "FRESH OUT OF THE OVEN"
+           ==================================================================== -->
+      <section id="projects" class="section-container projects-section">
+        <div class="section-header">
+          <div class="section-pill">
+            <span>🍰</span>
+            <span>FRESH FROM THE WORKBENCH</span>
+          </div>
+          <h2 class="section-title">Fresh out of the oven<span class="dessert-period">.</span></h2>
+          <p class="section-subtitle">
+            Exploratory project testbeds, distributed experiments, and curiosity-driven software oddities.
+          </p>
+        </div>
+
+        <div class="projects-cards-container">
+          <!-- Project 1: Backend API Playground -->
+          <div class="project-card" tabindex="0">
+            <div class="project-top-banner">
+              <div class="pastry-badge">
+                <span class="pastry-icon">🍰</span>
+                <span class="pastry-name">Vanilla Mille-Feuille (Layered Architecture)</span>
+              </div>
+              <div class="sample-watermark">SAMPLE PROJECT</div>
+            </div>
+
+            <div class="project-body-grid">
+              <div class="project-info-side">
+                <span class="project-subtitle">Spring Boot &amp; RESTful Service Lab</span>
+                <h3 class="project-title">Backend API Playground</h3>
+                <p class="project-description">
+                  An experimental space for building and testing backend APIs. Features modular endpoint routing, custom middleware filters, structured JSON responses, and error handling contracts.
+                </p>
+
+                <ul class="project-features-list">
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D89A62" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Modular controller architectures with clean DTO mapping</span>
+                  </li>
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D89A62" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Robust exception handling with RFC 7807 problem details</span>
+                  </li>
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D89A62" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Simulated load metrics and request-response auditing</span>
+                  </li>
+                </ul>
+
+                <div class="project-tags-row">
+                  <span class="project-tag">Java</span>
+                  <span class="project-tag">Spring Boot</span>
+                  <span class="project-tag">REST API</span>
+                </div>
+
+                <div class="project-action-buttons">
+                  <a href="https://github.com/placeholder-atharva/backend-api-playground" target="_blank" rel="noopener noreferrer" class="btn btn-card-github" title="Editable repository link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                      <path d="M9 18c-4.51 2-5-2-7-2" />
+                    </svg>
+                    <span>Source Code</span>
+                    <span class="editable-tag">(Placeholder)</span>
+                  </a>
+
+                  <button id="btn-test-api" class="btn btn-card-action">
+                    <span>Test Endpoint</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Visual Simulator -->
+              <div class="project-visual-side">
+                <div class="project-mockup-frame">
+                  <div class="mockup-header">
+                    <div class="mockup-dots">
+                      <span class="dot red"></span>
+                      <span class="dot yellow"></span>
+                      <span class="dot green"></span>
+                    </div>
+                    <span class="mockup-url">GET /api/v1/patisserie/health</span>
+                  </div>
+                  <div class="mockup-screen">
+                    <div class="mockup-metrics">
+                      <span id="api-status-pill" class="metric-pill status-pill-success">200 OK</span>
+                      <span id="api-latency-pill" class="metric-pill latency-pill">12 ms</span>
+                    </div>
+                    <pre class="mockup-code">{
+  "status": "HEALTHY",
+  "service": "api-playground",
+  "jvm_uptime": "99.98%",
+  "sweetness_factor": 1.0,
+  "timestamp": "<span id="api-timestamp">Live</span>"
+}</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Event-Driven Experiments -->
+          <div class="project-card" tabindex="0">
+            <div class="project-top-banner">
+              <div class="pastry-badge">
+                <span class="pastry-icon">🍩</span>
+                <span class="pastry-name">Chocolate Babka Swirl (Event Streams)</span>
+              </div>
+              <div class="sample-watermark">SAMPLE PROJECT</div>
+            </div>
+
+            <div class="project-body-grid">
+              <div class="project-info-side">
+                <span class="project-subtitle">Kafka Event Stream &amp; Go Pipeline</span>
+                <h3 class="project-title">Event-Driven Experiments</h3>
+                <p class="project-description">
+                  A playground for exploring asynchronous communication and event-driven architecture. Models producer-consumer pipelines, topic partitioning, message serialization, and backpressure handling.
+                </p>
+
+                <ul class="project-features-list">
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D89A62" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Asynchronous message dispatching with Go routines</span>
+                  </li>
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D89A62" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Partitioned topic consumption with consumer group tracking</span>
+                  </li>
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D89A62" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Graceful shutdown and commit offset lifecycle management</span>
+                  </li>
+                </ul>
+
+                <div class="project-tags-row">
+                  <span class="project-tag">Go</span>
+                  <span class="project-tag">Kafka</span>
+                  <span class="project-tag">Distributed Systems</span>
+                </div>
+
+                <div class="project-action-buttons">
+                  <a href="https://github.com/placeholder-atharva/event-driven-experiments" target="_blank" rel="noopener noreferrer" class="btn btn-card-github" title="Editable repository link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                      <path d="M9 18c-4.51 2-5-2-7-2" />
+                    </svg>
+                    <span>Source Code</span>
+                    <span class="editable-tag">(Placeholder)</span>
+                  </a>
+
+                  <button id="btn-produce-kafka" class="btn btn-card-action">
+                    <span>Produce Event</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Visual Streamer -->
+              <div class="project-visual-side">
+                <div class="project-mockup-frame">
+                  <div class="mockup-header">
+                    <div class="mockup-dots">
+                      <span class="dot red"></span>
+                      <span class="dot yellow"></span>
+                      <span class="dot green"></span>
+                    </div>
+                    <span class="mockup-url">Kafka Topic: dessert.orders.v1</span>
+                  </div>
+                  <div class="kafka-pipeline-visual">
+                    <div class="pipeline-nodes">
+                      <div class="p-node producer">Producer (Go)</div>
+                      <div class="p-arrow">➔</div>
+                      <div class="p-node broker">Cluster [P-0]</div>
+                      <div class="p-arrow">➔</div>
+                      <div class="p-node consumer">Consumer</div>
+                    </div>
+                    <div class="kafka-events-stream" id="kafka-events-container">
+                      <div class="event-packet">
+                        <span class="packet-dot"></span>
+                        <span class="packet-msg">ORDER_CREATED_049</span>
+                        <span class="packet-offset">offset:3142</span>
+                      </div>
+                      <div class="event-packet">
+                        <span class="packet-dot"></span>
+                        <span class="packet-msg">PAYMENT_AUTHORIZED_812</span>
+                        <span class="packet-offset">offset:3143</span>
+                      </div>
+                      <div class="event-packet">
+                        <span class="packet-dot"></span>
+                        <span class="packet-msg">INVENTORY_RESERVED_304</span>
+                        <span class="packet-offset">offset:3144</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Beautifully Useless -->
+          <div class="project-card" tabindex="0">
+            <div class="project-top-banner">
+              <div class="pastry-badge">
+                <span class="pastry-icon">🧁</span>
+                <span class="pastry-name">Strawberry Confetti Tart (Pure Joy)</span>
+              </div>
+              <div class="sample-watermark">SAMPLE PROJECT</div>
+            </div>
+
+            <div class="project-body-grid">
+              <div class="project-info-side">
+                <span class="project-subtitle">Curiosity-Driven Software Oddities</span>
+                <h3 class="project-title">Beautifully Useless</h3>
+                <p class="project-description">
+                  A collection of fun, unnecessary software experiments built purely out of curiosity. Contains absurd computational toys, retro terminal animations, and delightfully quirky logic engines.
+                </p>
+
+                <ul class="project-features-list">
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D89A62" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Over-engineered solutions to problems that never existed</span>
+                  </li>
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D89A62" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Algorithms that calculate absurd metrics with extreme precision</span>
+                  </li>
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D89A62" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Built purely for the joy of exploration and learning new patterns</span>
+                  </li>
+                </ul>
+
+                <div class="project-tags-row">
+                  <span class="project-tag">Programming</span>
+                  <span class="project-tag">Experiments</span>
+                  <span class="project-tag">Fun</span>
+                </div>
+
+                <div class="project-action-buttons">
+                  <a href="https://github.com/placeholder-atharva/beautifully-useless" target="_blank" rel="noopener noreferrer" class="btn btn-card-github" title="Editable repository link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                      <path d="M9 18c-4.51 2-5-2-7-2" />
+                    </svg>
+                    <span>Source Code</span>
+                    <span class="editable-tag">(Placeholder)</span>
+                  </a>
+
+                  <button id="btn-useless-idea" class="btn btn-card-action">
+                    <span>Bake New Idea ✨</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Visual Useless Generator -->
+              <div class="project-visual-side">
+                <div class="project-mockup-frame">
+                  <div class="mockup-header">
+                    <div class="mockup-dots">
+                      <span class="dot red"></span>
+                      <span class="dot yellow"></span>
+                      <span class="dot green"></span>
+                    </div>
+                    <span class="mockup-url">useless-gen.wasm</span>
+                  </div>
+                  <div class="useless-display-box">
+                    <div class="useless-icon-orbit">🎉</div>
+                    <p class="useless-quote-text" id="useless-quote">
+                      "A compiler that rejects code if it detects insufficient pastry references in variable names."
+                    </p>
+                    <div class="useless-stats">
+                      <span>Utility Score: 0/100</span>
+                      <span>Fun Score: 100/100</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION F: BEYOND THE CODE
+           ==================================================================== -->
+      <section id="beyond" class="section-container beyond-section">
+        <div class="section-header">
+          <div class="section-pill">
+            <span>🎮</span>
+            <span>OFFLINE CHANNELS</span>
+          </div>
+          <h2 class="section-title">Life isn't all semicolons<span class="dessert-period">.</span></h2>
+          <p class="section-subtitle">
+            The personal pursuits that recharge my creativity and keep curiosity high.
+          </p>
+        </div>
+
+        <div class="hobbies-grid">
+          <!-- Gaming -->
+          <div class="hobby-card gaming-card" tabindex="0">
+            <div class="hobby-card-top">
+              <div class="hobby-icon-badge">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D89A62" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="6" x2="10" y1="12" y2="12" />
+                  <line x1="8" x2="8" y1="10" y2="14" />
+                  <line x1="15" x2="15.01" y1="13" y2="13" stroke-width="3" />
+                  <line x1="18" x2="18.01" y1="11" y2="11" stroke-width="3" />
+                  <rect width="20" height="12" x="2" y="6" rx="6" />
+                </svg>
+              </div>
+              <span class="hobby-id-tag">#gaming</span>
+            </div>
+            <div class="hobby-card-content">
+              <h3 class="hobby-title">Gaming</h3>
+              <p class="hobby-tagline">One more match. Probably.</p>
+              <div class="hobby-quote-bubble">
+                "Just checking if the server latency is acceptable... one more round."
+              </div>
+              <p class="hobby-details">
+                Immersive RPGs, tactical strategy, and team matches. Beyond entertainment, games are incredible case studies in low-latency networking, client-side prediction, and real-time state synchronization.
+              </p>
+            </div>
+            <div class="hobby-card-footer">
+              <span class="hobby-pastry-note">🍰 Powered by chocolate energy bites and iced matcha.</span>
+            </div>
+          </div>
+
+          <!-- Reading -->
+          <div class="hobby-card reading-card" tabindex="0">
+            <div class="hobby-card-top">
+              <div class="hobby-icon-badge">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4F8A65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+              </div>
+              <span class="hobby-id-tag">#reading</span>
+            </div>
+            <div class="hobby-card-content">
+              <h3 class="hobby-title">Reading</h3>
+              <p class="hobby-tagline">Collecting ideas, one page at a time.</p>
+              <div class="hobby-quote-bubble">
+                "Books are the ultimate asynchronous API for human thought."
+              </div>
+              <p class="hobby-details">
+                Deep dives into systems engineering literature, sci-fi world-building, and history of engineering. Reading expands mental models and provides perspective on how great systems were solved before modern hype.
+              </p>
+            </div>
+            <div class="hobby-card-footer">
+              <span class="hobby-pastry-note">🍰 Best paired with warm cinnamon pastry and earl grey.</span>
+            </div>
+          </div>
+
+          <!-- Useless Software -->
+          <div class="hobby-card useless-software-card" tabindex="0">
+            <div class="hobby-card-top">
+              <div class="hobby-icon-badge">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#E26D85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z" />
+                  <path d="M19 4v4M21 6h-4" />
+                </svg>
+              </div>
+              <span class="hobby-id-tag">#experiments</span>
+            </div>
+            <div class="hobby-card-content">
+              <h3 class="hobby-title">Useless Software</h3>
+              <p class="hobby-tagline">Because I can. That's the whole reason.</p>
+              <div class="hobby-quote-bubble">
+                "The most educational programs are often the ones with zero commercial utility."
+              </div>
+              <p class="hobby-details">
+                Writing micro-programs that convert binary to ASCII donuts, CLI spinners that simulate a bakery oven baking virtual cookies, and quirky math toys. Pure code freedom without requirements documents.
+              </p>
+            </div>
+            <div class="hobby-card-footer">
+              <span class="hobby-pastry-note">🍰 Frosted with pure curiosity and rainbow sprinkles.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION G: CONTACT — "LET'S MAKE SOMETHING SWEET"
+           ==================================================================== -->
+      <section id="contact" class="section-container contact-section">
+        <div class="section-header">
+          <div class="section-pill">
+            <span>💌</span>
+            <span>BAKERY INBOX</span>
+          </div>
+          <h2 class="section-title">Let's make something sweet<span class="dessert-period">.</span></h2>
+          <p class="section-subtitle">
+            Have an interesting idea, a technical problem, or just want to chat about backend systems, distributed architectures, or gaming? My inbox is always open.
+          </p>
+        </div>
+
+        <div class="contact-card-container">
+          <div class="patisserie-order-card">
+            <div class="order-card-header">
+              <div class="patisserie-stamp">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#D89A62" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 12H5c-.55 0-1 .45-1 1v6c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-6c0-.55-.45-1-1-1z" />
+                  <path d="M4.5 12c-.83 0-1.5-.67-1.5-1.5 0-1.8 1.4-3.3 3.2-3.5C6.7 4.9 8.6 3 11 3c2.2 0 4 1.6 4.4 3.7 1.6.4 2.8 1.8 2.8 3.5 0 .9-.7 1.8-1.5 1.8H4.5z" />
+                  <circle cx="12" cy="3" r="1.5" fill="#D89A62" stroke="none" />
+                </svg>
+                <div class="stamp-text">
+                  <span class="stamp-brand">ATHARVA'S KITCHEN</span>
+                  <span class="stamp-sub">BACKEND &amp; SYSTEMS</span>
+                </div>
+              </div>
+              <div class="order-ticket-number">
+                TICKET #482
+              </div>
+            </div>
+
+            <div class="order-card-body">
+              <!-- Direct Email Pill & Copy Button -->
+              <div class="direct-email-row">
+                <div class="email-display-box">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D89A62" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                  <span class="email-text">atharva.guldagad@example.com</span>
+                  <span class="email-placeholder-hint">(Editable placeholder)</span>
+                </div>
+
+                <button id="btn-copy-email" class="btn-copy-email" title="Copy email address" aria-label="Copy Atharva's email to clipboard">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4B2925" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                  </svg>
+                  <span>Copy Email</span>
+                </button>
+              </div>
+
+              <!-- Social Links Row -->
+              <div class="social-chips-row">
+                <a href="https://github.com/placeholder-atharva" target="_blank" rel="noopener noreferrer" class="social-chip" title="Atharva's GitHub (Editable Placeholder)">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                  <span>GitHub</span>
+                  <span class="chip-arrow">↗</span>
+                </a>
+
+                <a href="https://linkedin.com/in/placeholder-atharva" target="_blank" rel="noopener noreferrer" class="social-chip" title="Atharva's LinkedIn (Editable Placeholder)">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect width="4" height="12" x="2" y="9" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                  <span>LinkedIn</span>
+                  <span class="chip-arrow">↗</span>
+                </a>
+
+                <a href="mailto:atharva.guldagad@example.com" class="social-chip" title="Send Direct Email">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                  <span>Mail Client</span>
+                  <span class="chip-arrow">↗</span>
+                </a>
+              </div>
+
+              <div class="order-card-divider"></div>
+
+              <!-- Interactive Contact Form -->
+              <form id="bakery-contact-form" class="bakery-contact-form">
+                <div class="form-row-dual">
+                  <div class="form-group">
+                    <label for="contact-name" class="form-label">Your Name <span class="req">*</span></label>
+                    <input id="contact-name" type="text" required placeholder="e.g. Ada Lovelace" class="form-input" />
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-email" class="form-label">Your Email Address <span class="req">*</span></label>
+                    <input id="contact-email" type="email" required placeholder="e.g. ada@example.com" class="form-input" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">Discussion Flavor / Topic</label>
+                  <select id="contact-subject" class="form-select">
+                    <option value="Backend Architecture">Backend Architecture &amp; APIs</option>
+                    <option value="Distributed Systems & Kafka">Distributed Systems &amp; Kafka</option>
+                    <option value="DevOps & Cloud">DevOps, Containers &amp; Cloud</option>
+                    <option value="Open Source Collaboration">Open Source Collaboration</option>
+                    <option value="Gaming & Books Chat">Gaming, Books &amp; Tech Chat</option>
+                    <option value="Just Saying Hi">Just Saying Hi ☕</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">Message Note <span class="req">*</span></label>
+                  <textarea id="contact-message" required rows="4" placeholder="Tell me about what you're working on, an interesting architectural question, or just drop a friendly hello..." class="form-textarea"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-submit-order">
+                  <span>Send Message &amp; Bake Connection</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z" />
+                  </svg>
+                </button>
+              </form>
+
+              <!-- Success Receipt Confirmation State -->
+              <div id="order-success-receipt" class="order-success-receipt" style="display: none;">
+                <div class="receipt-icon-circle">🧁</div>
+                <h3 class="receipt-title">Order Received! Message Dispatched</h3>
+                <p class="receipt-desc">
+                  Thank you for reaching out! Your note has been received in Atharva's inbox queue.
+                </p>
+                <div class="receipt-details-box">
+                  <div class="receipt-line">
+                    <span>Sender:</span>
+                    <strong id="receipt-sender">friend@example.com</strong>
+                  </div>
+                  <div class="receipt-line">
+                    <span>Topic:</span>
+                    <strong id="receipt-topic">Backend Architecture</strong>
+                  </div>
+                  <div class="receipt-line">
+                    <span>Estimated Response:</span>
+                    <strong>Within 24–48 hours</strong>
+                  </div>
+                </div>
+                <button id="btn-reset-contact" class="btn btn-secondary">
+                  <span>Send Another Note</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="order-card-perforations">
+              <span class="tear-label">✄ TEAR ALONG PERFORATION TO CONNECT ✄</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ======================================================================
+         FOOTER
+         ====================================================================== -->
+    <footer class="footer-container">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-brand-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E26D85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5c-.55 0-1 .45-1 1v6c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-6c0-.55-.45-1-1-1z" />
+                <path d="M4.5 12c-.83 0-1.5-.67-1.5-1.5 0-1.8 1.4-3.3 3.2-3.5C6.7 4.9 8.6 3 11 3c2.2 0 4 1.6 4.4 3.7 1.6.4 2.8 1.8 2.8 3.5 0 .9-.7 1.8-1.5 1.8H4.5z" />
+              </svg>
+              <span>atharva.dev</span>
+            </div>
+            <p class="footer-brand-tagline">
+              Building reliable backend systems and distributed services with passion and curiosity.
+            </p>
+          </div>
+
+          <div class="footer-nav-col">
+            <span class="footer-heading">Navigation</span>
+            <ul class="footer-links">
+              <li><a href="#about">About Developer</a></li>
+              <li><a href="#stack">Kitchen of Technologies</a></li>
+              <li><a href="#projects">Featured Projects</a></li>
+              <li><a href="#beyond">Beyond the Code</a></li>
+              <li><a href="#contact">Contact Bakery</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-social-col">
+            <span class="footer-heading">Connect</span>
+            <div class="footer-social-icons">
+              <a href="https://github.com/placeholder-atharva" target="_blank" rel="noopener noreferrer" class="footer-icon-link" title="GitHub (Editable Placeholder)" aria-label="GitHub">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+              </a>
+              <a href="https://linkedin.com/in/placeholder-atharva" target="_blank" rel="noopener noreferrer" class="footer-icon-link" title="LinkedIn (Editable Placeholder)" aria-label="LinkedIn">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <a href="mailto:atharva.guldagad@example.com" class="footer-icon-link" title="Send Email" aria-label="Email Atharva">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </a>
+            </div>
+            <p class="footer-placeholder-note">Links are marked as editable placeholders.</p>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+          <p class="footer-credit">
+            Baked with ☕ &amp; code by <strong>Atharva Guldagad</strong> • Third-Year BE Computer Engineering
+          </p>
+          <button class="btn-back-to-top" title="Return to top" aria-label="Scroll back to top">
+            <span>Top</span>
+            <span class="top-arrow">↑</span>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Pure Engine Script -->
+    <script src="/src/app.js"></script>
+  </body>
+</html>
